@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pulsar Star Candidate Detection</title>
+
+    <meta charset="utf-8" />
+    
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div id="panel" class="pt-4 pb-4">
+        <h1>Pulsar Star Candidate Detection</h1>
+        <form action="/result" method="POST">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Integrated Profile</h2>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="profile-mean">Mean</label>
+                    <input class="form-control" name="profile-mean" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="profile-std">Standard deviation</label>
+                    <input class="form-control" name="profile-std" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="profile-excess_kurtosis">Excess kurtosis</label>
+                    <input class="form-control" name="profile-excess_kurtosis" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="profile-skewness">Skewness</label>
+                    <input class="form-control" name="profile-skewness" type="number" step="any" value="0"/>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>DM-SNR Curve</h2>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="curve-mean">Mean</label>
+                    <input class="form-control" name="curve-mean" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="curve-std">Standard deviation</label>
+                    <input class="form-control" name="curve-std" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="curve-excess_kurtosis">Excess kurtosis</label>
+                    <input class="form-control" name="curve-excess_kurtosis" type="number" step="any" value="0"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="curve-skewness">Skewness</label>
+                    <input class="form-control" name="curve-skewness" type="number" step="any" value="0"/>
+                </div>
+            </div>
+            <div class="mt-5">
+                <button type="submit" id="calculate" class="btn btn-lg btn-primary">Calculate!</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

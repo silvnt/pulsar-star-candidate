@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+#panel{
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url("/static/img/shooting-stars-background.gif") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+form {
+    margin: 0% 20%;
+}
+
+input {
+    font-family: 'Verdana', sans-serif;
+}
+
+#calculate {
+    width: 50%;
+    font-size: x-large;
+}
